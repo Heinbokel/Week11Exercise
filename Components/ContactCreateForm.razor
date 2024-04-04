@@ -1,0 +1,10 @@
+<h2>Create Contact</h2>
+<form>
+        <label for="fullName">Full Name</label>
+        <input type="text" id="fullName" @bind="ContactToCreate.FullName" name="fullName" required>
+
+        <label for="phoneNumber">Phone Number</label>
+        <input type="text" id="phoneNumber" @bind="ContactToCreate.PhoneNumber" name="phoneNumber"required>
+
+    <button type="submit" class="btn btn-primary" @onclick="CreateContact">Create</button>
+</form>

@@ -1,0 +1,7 @@
+@page "/contacts"
+
+<ContactCreateForm ContactCreated="OnContactCreated"/>
+
+@foreach(Contact contact in Contacts) {
+    <ContactCard Contact="contact" ContactDeleted="OnContactDeleted"/>
+}
